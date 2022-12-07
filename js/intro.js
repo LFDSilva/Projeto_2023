@@ -43,8 +43,12 @@ function start() {
 	showDivWhats = true;
 }
 
-function startWhats() {
-	window.open("https://api.whatsapp.com/send?phone=+*035988621807*&text=%20*teste*");
+function startWhatsOk() {
+	window.open("https://api.whatsapp.com/send?phone=+*5535988621807*&text=%20*Aceitamos*sua*convocação");
+} 
+
+function startWhatsNo() {
+	window.open("https://api.whatsapp.com/send?phone=+*5535988621807*&text=%20*Infelizmente*estamos*em*uma*outra*missão.*");
 } 
 
 /* Background with Stars */
