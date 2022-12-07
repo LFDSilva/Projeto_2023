@@ -17,6 +17,23 @@ paragraphs.style.height = height + 'px';
 iconSite.style.width = width * 0.15 + 'px';
 iconSite.style.height = height * 0.1 + 'px';
 
+function start() {
+	intro.className = 'intro text_intro animation_intro';   
+	intro_1.className = 'intro_1 text_intro animation_intro_1'; 
+	story.className = 'story text_story animation_story';
+	sound.play();
+}
+		 
+function WhatsOk() {
+	console.log("Whats ok");
+	window.open("https://api.whatsapp.com/send?phone=+*5535988621807*&text=%20*Aceito/Aceitamos*sua*convocação.");
+} 
+
+function WhatsNo() {
+	console.log("Whats No");
+	window.open("https://api.whatsapp.com/send?phone=+*5535988621807*&text=%20*Infelizmente*estamos*em*uma*outra*missão.*");
+} 
+
 window.addEventListener('resize', () => {
 	width = canvas.width = window.innerWidth;
 	height = canvas.height = window.innerHeight;
@@ -34,22 +51,8 @@ sound.addEventListener('ended', (event) => {
 	document.getElementById("secWhats").style.display = "block";  
 }); 
 
-function start() {
-	intro.className = 'intro text_intro animation_intro';   
-	intro_1.className = 'intro_1 text_intro animation_intro_1'; 
-	story.className = 'story text_story animation_story';
-	sound.play();
-  
-	showDivWhats = true;
-}
-
-function startWhatsOk() {
-	window.open("https://api.whatsapp.com/send?phone=+*5535988621807*&text=%20*Aceitamos*sua*convocação");
-} 
-
-function startWhatsNo() {
-	window.open("https://api.whatsapp.com/send?phone=+*5535988621807*&text=%20*Infelizmente*estamos*em*uma*outra*missão.*");
-} 
+document.getElementById('btnOk').addEventListener("click", WhatsOk, false);
+document.getElementById('btnNo').addEventListener("click", WhatsNo, false);
 
 /* Background with Stars */
 

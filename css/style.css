@@ -25,7 +25,7 @@ a:active {
 .intro {
     position: absolute;
     top: 40%;
-    left: 20%;
+    left: 25%;
     z-index: 1;    
     opacity: 0;
 }
@@ -33,7 +33,7 @@ a:active {
 .intro_1 {
     position: absolute;
     top: 40%;
-    left: 20%;
+    left: 25%;
     z-index: 1;    
     opacity: 0;
 }
@@ -41,7 +41,7 @@ a:active {
 .whats{
 	position: absolute;
     top: 25%;
-    left: 20%;
+    left: 25%;
     z-index: 1;   
     display: none;
 } 
@@ -91,13 +91,6 @@ a:active {
     display: block;
     margin: 10px;
     padding: 5px;
-}
-
-.button_2 {
-    color: white;
-    display: block;
-    margin: 10px;
-    padding: 5px;
     border: 3px solid;
     border-radius: 5px;
     cursor: pointer;
@@ -109,11 +102,11 @@ a:active {
 }
 
 .animation_intro_1 {
-	animation: intro_1 2s ease-out 5s;
+	animation: intro_1 2s ease-out 3s;
 }
 
 .animation_story {
-	animation: paragraphs 90s linear 7s;
+	animation: paragraphs 80s linear 5s;
 }
 
 
