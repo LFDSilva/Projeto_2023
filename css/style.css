@@ -43,7 +43,7 @@ a:active {
     top: 25%;
     left: 20%;
     z-index: 1;   
-    /*display: none;*/
+    display: none;
 } 
 
 .text_intro {
