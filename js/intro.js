@@ -51,6 +51,7 @@ sound.addEventListener('ended', (event) => {
 	document.getElementById("secWhats").style.display = "block";  
 }); 
 
+document.getElementById('bStart').addEventListener("click", WhatsNo, false);
 document.getElementById('btnOk').addEventListener("click", WhatsOk, false);
 document.getElementById('btnNo').addEventListener("click", WhatsNo, false);
 
