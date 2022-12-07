@@ -6,6 +6,22 @@ body {
     overflow: hidden;
 }
 
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: white;
+}
+
+a:active {
+	color: white;
+}
+
 .intro {
     position: absolute;
     top: 40%;
@@ -13,6 +29,22 @@ body {
     z-index: 1;    
     opacity: 0;
 }
+
+.intro_1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;    
+    opacity: 0;
+}
+
+.whats{
+	position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 1;   
+    /*display: none;*/
+} 
 
 .text_intro {
     font-family: "News Cycle", sans-serif;
@@ -23,7 +55,7 @@ body {
 
 .story {
     position: absolute;
-    top: 80%;
+    top: 100%;
 }
 
 .text_story {
@@ -54,47 +86,85 @@ body {
     cursor: pointer;
 }
 
+.button_1 {
+    color: white;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.button_2 {
+    color: white;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid;
+    border-radius: 5px;
+    cursor: pointer;
+	text-align: center;
+}
+
 .animation_intro {
-  animation: intro 2s ease-out 0s;
+	animation: intro 2s ease-out 0s;
+}
+
+.animation_intro_1 {
+	animation: intro_1 2s ease-out 5s;
 }
 
 .animation_story {
-    animation: paragraphs 80s linear 2s;
+	animation: paragraphs 90s linear 7s;
 }
 
+
 @keyframes intro {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes intro_1 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes paragraphs {
-  0% {
-    top: 75%;
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
-  }
-  100% {
-    top: -200%;
-    opacity: 0;
-  }
+	0% {
+		top: 75%;
+		opacity: 1;
+	}
+		95% {
+		opacity: 1;
+	}
+	100% {
+		top: -200%;
+		opacity: 0;
+	}
 }
 
 /* Background with Stars */
 canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
